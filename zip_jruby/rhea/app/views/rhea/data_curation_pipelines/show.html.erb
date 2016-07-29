@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @data_curation_pipeline.name %>
+</p>
+
+<p>
+  <strong>File type:</strong>
+  <%= @data_curation_pipeline.file_type %>
+</p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @data_curation_pipeline.parent %>
+</p>
+
+<p>
+  <strong>Hdfs path:</strong>
+  <%= @data_curation_pipeline.hdfs_path %>
+</p>
+
+<p>
+  <strong>File attributes:</strong>
+  <%= @data_curation_pipeline.file_attributes %>
+</p>
+
+<p>
+  <strong>Regex:</strong>
+  <%= @data_curation_pipeline.regex %>
+</p>
+
+<p>
+  <strong>Schedule:</strong>
+  <%= @data_curation_pipeline.schedule %>
+</p>
+
+<p>
+  <strong>Dataset:</strong>
+  <%= @data_curation_pipeline.dataset_id %>
+</p>
+
+<p>
+  <strong>Workflow:</strong>
+  <%= @data_curation_pipeline.workflow %>
+</p>
+
+<%= link_to 'Edit', edit_data_curation_pipeline_path(@data_curation_pipeline) %> |
+<%= link_to 'Back', data_curation_pipelines_path %>

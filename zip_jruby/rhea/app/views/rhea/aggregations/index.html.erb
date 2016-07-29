@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Aggregations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Aggregation type</th>
+      <th>File path</th>
+      <th>Query</th>
+      <th>Status</th>
+      <th>Schedule</th>
+      <th>Workflow</th>
+      <th>Correlation ids</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @aggregations.each do |aggregation| %>
+      <tr>
+        <td><%= aggregation.name %></td>
+        <td><%= aggregation.aggregation_type %></td>
+        <td><%= aggregation.file_path %></td>
+        <td><%= aggregation.query %></td>
+        <td><%= aggregation.status %></td>
+        <td><%= aggregation.schedule %></td>
+        <td><%= aggregation.workflow %></td>
+        <td><%= aggregation.correlation_ids %></td>
+        <td><%= link_to 'Show', aggregation %></td>
+        <td><%= link_to 'Edit', edit_aggregation_path(aggregation) %></td>
+        <td><%= link_to 'Destroy', aggregation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Aggregation', new_aggregation_path %>

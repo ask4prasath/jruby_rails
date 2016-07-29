@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Data Curation Pipelines</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>File type</th>
+      <th>Parent</th>
+      <th>Hdfs path</th>
+      <th>File attributes</th>
+      <th>Regex</th>
+      <th>Schedule</th>
+      <th>Dataset</th>
+      <th>Workflow</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @data_curation_pipelines.each do |data_curation_pipeline| %>
+      <tr>
+        <td><%= data_curation_pipeline.name %></td>
+        <td><%= data_curation_pipeline.file_type %></td>
+        <td><%= data_curation_pipeline.parent %></td>
+        <td><%= data_curation_pipeline.hdfs_path %></td>
+        <td><%= data_curation_pipeline.file_attributes %></td>
+        <td><%= data_curation_pipeline.regex %></td>
+        <td><%= data_curation_pipeline.schedule %></td>
+        <td><%= data_curation_pipeline.dataset_id %></td>
+        <td><%= data_curation_pipeline.workflow %></td>
+        <td><%= link_to 'Show', data_curation_pipeline %></td>
+        <td><%= link_to 'Edit', edit_data_curation_pipeline_path(data_curation_pipeline) %></td>
+        <td><%= link_to 'Destroy', data_curation_pipeline, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Data curation pipeline', new_data_curation_pipeline_path %>

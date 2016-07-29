@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @workflow.name %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @workflow.created_by %>
+</p>
+
+<p>
+  <strong>Scheduled expression:</strong>
+  <%= @workflow.scheduled_expression %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @workflow.status %>
+</p>
+
+<p>
+  <strong>Notification emails:</strong>
+  <%= @workflow.notification_emails %>
+</p>
+
+<%= link_to 'Edit', edit_workflow_path(@workflow) %> |
+<%= link_to 'Back', workflows_path %>

@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Data Ingestion Pipelines</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Connector type</th>
+      <th>Credentials</th>
+      <th>Sink path</th>
+      <th>Schedule</th>
+      <th>Workflow</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @data_ingestion_pipelines.each do |data_ingestion_pipeline| %>
+      <tr>
+        <td><%= data_ingestion_pipeline.name %></td>
+        <td><%= data_ingestion_pipeline.connector_type %></td>
+        <td><%= data_ingestion_pipeline.credentials %></td>
+        <td><%= data_ingestion_pipeline.sink_path %></td>
+        <td><%= data_ingestion_pipeline.schedule %></td>
+        <td><%= data_ingestion_pipeline.workflow %></td>
+        <td><%= link_to 'Show', data_ingestion_pipeline %></td>
+        <td><%= link_to 'Edit', edit_data_ingestion_pipeline_path(data_ingestion_pipeline) %></td>
+        <td><%= link_to 'Destroy', data_ingestion_pipeline, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Data ingestion pipeline', new_data_ingestion_pipeline_path %>

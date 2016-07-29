@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  file_type: MyString
+  parent: MyString
+  hdfs_path: MyString
+  file_attributes: MyString
+  regex: MyString
+  schedule: MyString
+  dataset_id: 1
+  workflow_id: 
+
+two:
+  name: MyString
+  file_type: MyString
+  parent: MyString
+  hdfs_path: MyString
+  file_attributes: MyString
+  regex: MyString
+  schedule: MyString
+  dataset_id: 1
+  workflow_id: 

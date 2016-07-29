@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  aggregation_type: MyString
+  file_path: MyString
+  query: MyString
+  status: MyString
+  schedule: MyString
+  workflow_id: 
+  correlation_ids: MyString
+
+two:
+  name: MyString
+  aggregation_type: MyString
+  file_path: MyString
+  query: MyString
+  status: MyString
+  schedule: MyString
+  workflow_id: 
+  correlation_ids: MyString

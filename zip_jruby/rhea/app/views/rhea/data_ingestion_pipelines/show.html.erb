@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @data_ingestion_pipeline.name %>
+</p>
+
+<p>
+  <strong>Connector type:</strong>
+  <%= @data_ingestion_pipeline.connector_type %>
+</p>
+
+<p>
+  <strong>Credentials:</strong>
+  <%= @data_ingestion_pipeline.credentials %>
+</p>
+
+<p>
+  <strong>Sink path:</strong>
+  <%= @data_ingestion_pipeline.sink_path %>
+</p>
+
+<p>
+  <strong>Schedule:</strong>
+  <%= @data_ingestion_pipeline.schedule %>
+</p>
+
+<p>
+  <strong>Workflow:</strong>
+  <%= @data_ingestion_pipeline.workflow %>
+</p>
+
+<%= link_to 'Edit', edit_data_ingestion_pipeline_path(@data_ingestion_pipeline) %> |
+<%= link_to 'Back', data_ingestion_pipelines_path %>

@@ -1,0 +1,41 @@
+<%= form_for(@data_ingestion_pipeline) do |f| %>
+  <% if @data_ingestion_pipeline.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@data_ingestion_pipeline.errors.count, "error") %> prohibited this data_ingestion_pipeline from being saved:</h2>
+
+      <ul>
+      <% @data_ingestion_pipeline.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :connector_type %><br>
+    <%= f.text_field :connector_type %>
+  </div>
+  <div class="field">
+    <%= f.label :credentials %><br>
+    <%= f.text_field :credentials %>
+  </div>
+  <div class="field">
+    <%= f.label :sink_path %><br>
+    <%= f.text_field :sink_path %>
+  </div>
+  <div class="field">
+    <%= f.label :schedule %><br>
+    <%= f.text_field :schedule %>
+  </div>
+  <div class="field">
+    <%= f.label :workflow_id %><br>
+    <%= f.text_field :workflow_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

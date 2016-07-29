@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @aggregation.name %>
+</p>
+
+<p>
+  <strong>Aggregation type:</strong>
+  <%= @aggregation.aggregation_type %>
+</p>
+
+<p>
+  <strong>File path:</strong>
+  <%= @aggregation.file_path %>
+</p>
+
+<p>
+  <strong>Query:</strong>
+  <%= @aggregation.query %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @aggregation.status %>
+</p>
+
+<p>
+  <strong>Schedule:</strong>
+  <%= @aggregation.schedule %>
+</p>
+
+<p>
+  <strong>Workflow:</strong>
+  <%= @aggregation.workflow %>
+</p>
+
+<p>
+  <strong>Correlation ids:</strong>
+  <%= @aggregation.correlation_ids %>
+</p>
+
+<%= link_to 'Edit', edit_aggregation_path(@aggregation) %> |
+<%= link_to 'Back', aggregations_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  created_by: MyString
+  scheduled_expression: MyString
+  status: MyString
+  notification_emails: MyString
+
+two:
+  name: MyString
+  created_by: MyString
+  scheduled_expression: MyString
+  status: MyString
+  notification_emails: MyString

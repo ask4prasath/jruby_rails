@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  schema_key: MyString
+  schema_value: MyString
+  status: MyString
+  created_by: MyString
+  workflow_id: 
+
+two:
+  name: MyString
+  schema_key: MyString
+  schema_value: MyString
+  status: MyString
+  created_by: MyString
+  workflow_id: 
